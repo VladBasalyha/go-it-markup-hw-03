@@ -27,6 +27,37 @@ body {
   background-color: var(--bg-color);
   font-family: Roboto, sans-serif;
 }
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-list h3 {
+  margin-bottom: 10px;
+}
+.advantages-list li {
+  width: 270px;
+  margin: 0 15px;
+}
+.advantages-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid blueviolet;
+}
 .logo {
   font-size: 26px;
   text-decoration: none;
@@ -58,7 +89,7 @@ body {
   background-color: var(--bg-hero-color);
 }
 .nav-list > a {
-  display: inline;
+  display: flex;
   color: var(--main-text-color);
   font-size: 14px;
   text-decoration: none;
@@ -96,15 +127,24 @@ body {
   color: var(--bg-buttons-color-hover);
   text-decoration: none;
 }
+.hero {
+  text-align: center;
+}
 .hero-heading {
   color: var(--bg-color);
+  padding: 200px 452px 0px 452px;
   font-size: 44px;
   text-align: center;
   line-height: 1.36;
   text-transform: uppercase;
   font-weight: 900;
+  margin-bottom: 40px;
 }
 .hero-button {
+  padding: 10px 32px 10px 32px;
+  margin-bottom: 210px;
+  border-radius: 4px;
+  border-color: transparent;
   background-color: var(--bg-buttons-color-hover);
   color: var(--bg-color);
   font-weight: 700;
@@ -117,6 +157,7 @@ body {
   color: var(--main-text-color);
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 .advantages li {
   list-style: none;
@@ -140,7 +181,7 @@ list-style: none;
 .team li {
   list-style: none;
 }
-.team > h2 {
+.team-heading {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -169,11 +210,15 @@ list-style: none;
   text-decoration: none;
 }
 .nav-button {
+  display: inline-block;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  border-color: transparent;
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   background-color: var(--bg-button-color);
-  border-color: var(--bg-button-color);
   font-weight: 500;
   font-family: inherit;
   line-height: 1.7;
