@@ -214,6 +214,7 @@ letter-spacing: 0.02em;
 }
 .email {
   display: block;
+  margin-right: 50px;
 }
 .contacts-footer > a:focus,
 .contacts-footer > a:hover {
